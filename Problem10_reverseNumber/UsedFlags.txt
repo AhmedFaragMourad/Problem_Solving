@@ -1,0 +1,10 @@
+@this file Contains Flags used in compilation process for these files 
+
+1-  gcc -E -> preprocessor Flags presents files.i 
+	gcc -E filename.c -o desigredoutputfilename.i 
+
+2-  gcc -c filename1.c filename2.c -> Compile these 2 files and present object files 
+	gcc -c filename1.c filename2.c
+	
+3-  gcc -o -> linker Flag Presents final .exe File 
+	gcc -o OutputFilename filename1.o filename2.o
