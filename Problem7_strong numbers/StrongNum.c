@@ -4,7 +4,7 @@
  *****************************************************************/
  #include"stdio.h"
  #include"StrongNum.h"
- /////Worng sol Problem in factirial func
+ 
  int Factorial(int num)
  {
 	 if (num==0)
