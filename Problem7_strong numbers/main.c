@@ -9,7 +9,7 @@
  int main(void)
  {
  
-	GetStrongNum(1,1000);
+GetStrongNum(1,1000);
 
 	 return 0;
  }

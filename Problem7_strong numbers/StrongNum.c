@@ -7,8 +7,16 @@
  /////Worng sol Problem in factirial func
  int Factorial(int num)
  {
-	 error;
-	 return (num*Factorial(num-1));
+	 if (num==0)
+	 return num;
+	 int x=1;
+	 int i=0;
+	while(i<num)
+	{
+		x*=(num-i);
+		i++;
+	}
+	return x;
  }
 
  void GetStrongNum(int StartNum,int EndNum)
@@ -18,14 +26,15 @@
 	 for(int i=StartNum;i<EndNum;i++)
 	 {
 		 CopyNum=i;
+		 sum=0;
 		while(CopyNum != 0)
 		{
 			
-			FirstNum=i%10; 
+			FirstNum=CopyNum%10; 
 			sum+=Factorial(FirstNum);
 			CopyNum=CopyNum/10;
 		}
-		 if(CopyNum==i)
+		 if(sum==i)
 			 printf("%d ",i);
 		 else
 		 continue;
