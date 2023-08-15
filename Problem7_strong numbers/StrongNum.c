@@ -1,13 +1,13 @@
 /**********************************************************
- * C program to find prime numbers in given range
+ * C program to find Strong numbers in given range
  * Auther: Ahmed Farag Mourad 
  *****************************************************************/
  #include"stdio.h"
  #include"StrongNum.h"
- 
+ /////Worng sol Problem in factirial func
  int Factorial(int num)
  {
-	 
+	 error;
 	 return (num*Factorial(num-1));
  }
 
